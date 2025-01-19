@@ -1,5 +1,5 @@
 let weather = {
-    "api-key": "1aec1dc7e55b0664f5c6b1e3f4105884",
+    "api-key": "YOUR-API-KEY",
     fetchWeather: function (city) {
         fetch(
             'https://api.openweathermap.org/data/2.5/weather?q='
@@ -53,7 +53,7 @@ let weather = {
 };
 
 let geocode = {
-    "api-key": "115b9f226f534c7dbb90e5024f520cc7",
+    "api-key": "YOUR-API-KEY",
     reverseGeocode: function (latitude, longitude) {
         fetch(
             `https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=${this["api-key"]}`
